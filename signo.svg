@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" xmlns:bx="https://boxy-svg.com">
+  <defs>
+    <filter id="inner-shadow-filter-0" bx:preset="inner-shadow 1 0 0 6 0.5 rgba(0,0,0,0.7)" color-interpolation-filters="sRGB" x="-50%" y="-50%" width="200%" height="200%">
+      <feOffset dx="0" dy="0"/>
+      <feGaussianBlur stdDeviation="6"/>
+      <feComposite operator="out" in="SourceGraphic"/>
+      <feComponentTransfer result="choke">
+        <feFuncA type="linear" slope="1"/>
+      </feComponentTransfer>
+      <feFlood flood-color="rgba(0,0,0,0.7)" result="color"/>
+      <feComposite operator="in" in="color" in2="choke" result="shadow"/>
+      <feComposite operator="over" in="shadow" in2="SourceGraphic"/>
+    </filter>
+    <filter id="inner-shadow-filter-1" bx:preset="inner-shadow 1 0 0 2 0.5 rgba(0,0,0,0.7)" color-interpolation-filters="sRGB" x="-50%" y="-50%" width="200%" height="200%">
+      <feOffset dx="0" dy="0"/>
+      <feGaussianBlur stdDeviation="2"/>
+      <feComposite operator="out" in="SourceGraphic"/>
+      <feComponentTransfer result="choke">
+        <feFuncA type="linear" slope="1"/>
+      </feComponentTransfer>
+      <feFlood flood-color="rgba(0,0,0,0.7)" result="color"/>
+      <feComposite operator="in" in="color" in2="choke" result="shadow"/>
+      <feComposite operator="over" in="shadow" in2="SourceGraphic"/>
+    </filter>
+    <filter id="inner-shadow-filter-2" bx:preset="inner-shadow 1 0 0 2 0.5 rgba(0,0,0,0.7)" color-interpolation-filters="sRGB" x="-50%" y="-50%" width="200%" height="200%">
+      <feOffset dx="0" dy="0"/>
+      <feGaussianBlur stdDeviation="2"/>
+      <feComposite operator="out" in="SourceGraphic"/>
+      <feComponentTransfer result="choke">
+        <feFuncA type="linear" slope="1"/>
+      </feComponentTransfer>
+      <feFlood flood-color="rgba(0,0,0,0.7)" result="color"/>
+      <feComposite operator="in" in="color" in2="choke" result="shadow"/>
+      <feComposite operator="over" in="shadow" in2="SourceGraphic"/>
+    </filter>
+    <filter id="gaussian-blur-filter-0" bx:preset="gaussian-blur 1 2.1" color-interpolation-filters="sRGB" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2.1 2.1" edgeMode="none"/>
+    </filter>
+  </defs>
+  <g style="transform-origin: 244.056px 197.54px;">
+    <rect x="164.565" y="112.94" width="167.363" height="169.418" style="stroke-width: 1; fill: rgb(155, 127, 1); filter: url(&quot;#gaussian-blur-filter-0&quot;);"/>
+    <rect x="157.92" y="108.114" width="171.019" height="170.628" style="fill: rgb(242, 203, 3); filter: url(&quot;#inner-shadow-filter-0&quot;);"/>
+  </g>
+  <g id="interrogacion" style="transform-origin: 241.209px 189.458px;">
+    <polygon style="fill: rgb(166, 166, 166);" points="203.297 128.402 188.598 141.848 188.965 175.193 221.008 175.121 220.914 154.278 222.919 150.158 262.498 150.454 265.236 152.348 265.569 172.923 261.824 175.814 242.215 176.504 227.628 189.385 227.132 219.743 259.298 219.991 260.083 203.766 262.156 198.852 284.611 198.381 298.354 185.548 299.253 145.892 283.761 129.34" id="signo1"/>
+    <polygon style="fill: rgb(255, 255, 255); stroke-width: 1; filter: url(&quot;#inner-shadow-filter-1&quot;);" points="200.029 128.313 185.33 141.759 185.697 175.104 217.74 175.032 217.646 154.189 219.651 150.069 259.23 150.365 261.968 152.259 262.301 172.834 258.556 175.725 238.947 176.415 224.36 189.296 223.864 219.654 256.03 219.902 256.815 203.677 258.888 198.763 281.343 198.292 295.086 185.459 295.985 145.803 280.493 129.251" id="signo2"/>
+    <rect x="228.232" y="228.954" width="31.62" height="21.952" style="fill: rgb(165, 165, 165);" id="puno1"/>
+    <rect x="224.964" y="228.865" width="31.62" height="21.952" style="fill: rgb(255, 255, 255); stroke-width: 1; filter: url(&quot;#inner-shadow-filter-2&quot;);" id="puno2"/>
+  </g>
+  <ellipse style="fill: rgb(154, 124, 24);" cx="172.194" cy="118.506" rx="6.488" ry="6.244"/>
+  <ellipse style="stroke-width: 1; fill: rgb(154, 124, 24);" cx="314.248" cy="119.995" rx="6.488" ry="6.244"/>
+  <ellipse style="stroke-width: 1; fill: rgb(154, 124, 24);" cx="313.494" cy="262.86" rx="6.488" ry="6.244"/>
+  <ellipse style="stroke-width: 1; fill: rgb(154, 124, 24);" cx="172.175" cy="261.97" rx="6.488" ry="6.244"/>
+</svg>

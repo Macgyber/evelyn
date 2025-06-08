@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ejemplo z-index</title>
+  <style>
+    .capa {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+      top: 50px;
+      left: 50px;
+      transition: all 0.3s ease;
+    }
+
+    .roja {
+      background-color: red;
+      z-index: 1;
+    }
+
+    .azul {
+      background-color: blue;
+      left: 100px;
+      top: 100px;
+      z-index: 2;
+    }
+
+    .top {
+      z-index: 10 !important;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="capa roja" id="roja"></div>
+  <div class="capa azul" id="azul"></div>
+
+  <button onclick="traerAlFrente('roja')">Traer roja al frente</button>
+  <button onclick="traerAlFrente('azul')">Traer azul al frente</button>
+
+  <script>
+    function traerAlFrente(id) {
+      // Quitar clase "top" a todos
+      document.querySelectorAll('.capa').forEach(el => el.classList.remove('top'));
+
+      // Agregar clase "top" solo al que se va al frente
+      document.getElementById(id).classList.add('top');
+    }
+  </script>
+
+</body>
+</html>

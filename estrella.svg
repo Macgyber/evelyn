@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" xmlns:bx="https://boxy-svg.com">
+  <defs>
+    <filter id="inner-shadow-filter-0" bx:preset="inner-shadow 1 0 0 10 0.5 #fea40f" color-interpolation-filters="sRGB" x="-50%" y="-50%" width="200%" height="200%">
+      <feOffset dx="0" dy="0"/>
+      <feGaussianBlur stdDeviation="10"/>
+      <feComposite operator="out" in="SourceGraphic"/>
+      <feComponentTransfer result="choke">
+        <feFuncA type="linear" slope="1"/>
+      </feComponentTransfer>
+      <feFlood flood-color="#fea40f" result="color"/>
+      <feComposite operator="in" in="color" in2="choke" result="shadow"/>
+      <feComposite operator="over" in="shadow" in2="SourceGraphic"/>
+    </filter>
+    <filter id="gaussian-blur-filter-0" bx:preset="gaussian-blur 1 1.1" color-interpolation-filters="sRGB" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="1.1 1.1" edgeMode="none"/>
+    </filter>
+    <filter id="gaussian-blur-filter-1" bx:preset="gaussian-blur 1 1.1" color-interpolation-filters="sRGB" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="1.1 1.1" edgeMode="none"/>
+    </filter>
+    <radialGradient gradientUnits="userSpaceOnUse" cx="230.605" cy="214.287" r="5.471" id="gradient-0" gradientTransform="matrix(0.048188, -1.726809, 1.211097, 0.033797, -5.680763, 609.60511)">
+      <stop offset="0" style="stop-color: rgb(130, 101, 58);"/>
+      <stop offset="1" style="stop-color: rgb(73, 36, 0);"/>
+    </radialGradient>
+    <radialGradient gradientUnits="userSpaceOnUse" cx="230.605" cy="214.287" r="5.471" id="gradient-1" gradientTransform="matrix(0.048188, -1.726809, 1.211097, 0.033797, -34.58828, 609.224189)">
+      <stop offset="0" style="stop-color: rgb(130, 101, 58);"/>
+      <stop offset="1" style="stop-color: rgb(73, 36, 0);"/>
+    </radialGradient>
+  </defs>
+  <path d="M 251.019 130.115 L 279.547 185.126 L 339.786 195.73 L 297.178 240.333 L 305.88 301.897 L 251.019 274.453 L 196.158 301.897 L 204.86 240.333 L 162.252 195.73 L 222.491 185.126 Z" bx:shape="star 251.019 225.074 93.335 94.959 0.52 5 1@7f023c45" style="fill: rgb(252, 238, 2); filter: url(&quot;#inner-shadow-filter-0&quot;);"/>
+  <ellipse style="stroke-width: 1; fill: url(&quot;#gradient-0&quot;);" cx="265.626" cy="216.765" rx="5.471" ry="15.238"/>
+  <ellipse style="stroke-width: 1; fill: rgb(255, 251, 234); stroke: rgb(255, 251, 234); filter: url(&quot;#gaussian-blur-filter-0&quot;);" cx="265.448" cy="210.86" rx="2.601" ry="5.831"/>
+  <ellipse style="stroke-width: 1; fill: url(&quot;#gradient-1&quot;);" cx="236.719" cy="216.385" rx="5.471" ry="15.238"/>
+  <ellipse style="stroke-width: 1; fill: rgb(255, 251, 234); stroke: rgb(255, 251, 234); filter: url(&quot;#gaussian-blur-filter-1&quot;);" cx="237.08" cy="210.201" rx="2.601" ry="5.831"/>
+</svg>

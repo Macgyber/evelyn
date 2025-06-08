@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" xmlns:bx="https://boxy-svg.com">
+  <defs>
+    <filter id="warp-filter-0" bx:preset="warp 1 50 0.1" color-interpolation-filters="sRGB" x="-50%" y="-50%" width="200%" height="200%">
+      <feComponentTransfer>
+        <feFuncR type="table" tableValues="1 0.5"/>
+      </feComponentTransfer>
+      <feMerge result="a">
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+      <feTurbulence type="fractalNoise" baseFrequency="0.01" numOctaves="1" result="warp"/>
+      <feDisplacementMap xChannelSelector="R" yChannelSelector="G" scale="50" in="a" in2="warp"/>
+    </filter>
+    <filter id="warp-filter-1" bx:preset="warp 1 50 0.1" color-interpolation-filters="sRGB" x="-50%" y="-50%" width="200%" height="200%">
+      <feComponentTransfer>
+        <feFuncR type="table" tableValues="1 0.5"/>
+      </feComponentTransfer>
+      <feMerge result="a">
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+      <feTurbulence type="fractalNoise" baseFrequency="0.01" numOctaves="1" result="warp"/>
+      <feDisplacementMap xChannelSelector="R" yChannelSelector="G" scale="50" in="a" in2="warp"/>
+    </filter>
+  </defs>
+  <rect x="224.056" y="108.915" width="66.115" height="52.709" style="fill: rgb(216, 0, 11); filter: url(&quot;#warp-filter-1&quot;); stroke: rgb(0, 0, 0);"/>
+  <path d="M 23.13 98.156 H 23.13 L 23.13 79.063 L 55.756 98.479 L 23.13 117.895 L 23.13 98.803 H 23.13 V 98.156 Z" bx:shape="arrow 23.13 79.063 32.626 38.832 0.647 32.626 0 1@fb827d91" style="fill: rgb(234, 255, 0); filter: url(&quot;#warp-filter-0&quot;); stroke: rgb(0, 0, 0);" transform="matrix(0.999898, 0.014313, -0.014313, 0.999898, 223.940323, 36.586132)"/>
+</svg>

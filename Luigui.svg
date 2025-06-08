@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" xmlns:bx="https://boxy-svg.com">
+  <defs>
+    <filter id="gaussian-blur-filter-0" bx:preset="gaussian-blur 1 2.7" color-interpolation-filters="sRGB" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2.7 2.7" edgeMode="none"/>
+    </filter>
+    <filter id="inner-shadow-filter-0" bx:preset="inner-shadow 1 0 0 10 0.5 #f6977e" color-interpolation-filters="sRGB" x="-50%" y="-50%" width="200%" height="200%">
+      <feOffset dx="0" dy="0"/>
+      <feGaussianBlur stdDeviation="10"/>
+      <feComposite operator="out" in="SourceGraphic"/>
+      <feComponentTransfer result="choke">
+        <feFuncA type="linear" slope="1"/>
+      </feComponentTransfer>
+      <feFlood flood-color="#f6977e" result="color"/>
+      <feComposite operator="in" in="color" in2="choke" result="shadow"/>
+      <feComposite operator="over" in="shadow" in2="SourceGraphic"/>
+    </filter>
+    <filter id="inner-shadow-filter-1" bx:preset="inner-shadow 1 0 0 5 0.5 #ca8d6c" color-interpolation-filters="sRGB" x="-50%" y="-50%" width="200%" height="200%">
+      <feOffset dx="0" dy="0"/>
+      <feGaussianBlur stdDeviation="5"/>
+      <feComposite operator="out" in="SourceGraphic"/>
+      <feComponentTransfer result="choke">
+        <feFuncA type="linear" slope="1"/>
+      </feComponentTransfer>
+      <feFlood flood-color="#ca8d6c" result="color"/>
+      <feComposite operator="in" in="color" in2="choke" result="shadow"/>
+      <feComposite operator="over" in="shadow" in2="SourceGraphic"/>
+    </filter>
+    <filter id="inner-shadow-filter-2" bx:preset="inner-shadow 1 0 0 3 1 #126eb7" color-interpolation-filters="sRGB" x="-50%" y="-50%" width="200%" height="200%">
+      <feOffset dx="0" dy="0"/>
+      <feGaussianBlur stdDeviation="3"/>
+      <feComposite operator="out" in="SourceGraphic"/>
+      <feComponentTransfer result="choke">
+        <feFuncA type="linear" slope="2"/>
+      </feComponentTransfer>
+      <feFlood flood-color="#126eb7" result="color"/>
+      <feComposite operator="in" in="color" in2="choke" result="shadow"/>
+      <feComposite operator="over" in="shadow" in2="SourceGraphic"/>
+    </filter>
+    <filter id="filter-1" bx:preset="inner-shadow 1 0 0 3 1 #126eb7" color-interpolation-filters="sRGB" x="-50%" y="-50%" width="200%" height="200%">
+      <feOffset dx="0" dy="0"/>
+      <feGaussianBlur stdDeviation="3"/>
+      <feComposite operator="out" in="SourceGraphic"/>
+      <feComponentTransfer result="choke">
+        <feFuncA type="linear" slope="2"/>
+      </feComponentTransfer>
+      <feFlood flood-color="#126eb7" result="color"/>
+      <feComposite operator="in" in="color" in2="choke" result="shadow"/>
+      <feComposite operator="over" in="shadow" in2="SourceGraphic"/>
+    </filter>
+    <filter id="gaussian-blur-filter-1" bx:preset="gaussian-blur 1 2.3" color-interpolation-filters="sRGB" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2.3 2.3" edgeMode="none"/>
+    </filter>
+    <filter id="inner-shadow-filter-3" bx:preset="inner-shadow 1 0 0 10 0.5 #eaad88" color-interpolation-filters="sRGB" x="-50%" y="-50%" width="200%" height="200%">
+      <feOffset dx="0" dy="0"/>
+      <feGaussianBlur stdDeviation="10"/>
+      <feComposite operator="out" in="SourceGraphic"/>
+      <feComponentTransfer result="choke">
+        <feFuncA type="linear" slope="1"/>
+      </feComponentTransfer>
+      <feFlood flood-color="#eaad88" result="color"/>
+      <feComposite operator="in" in="color" in2="choke" result="shadow"/>
+      <feComposite operator="over" in="shadow" in2="SourceGraphic"/>
+    </filter>
+    <filter id="gaussian-blur-filter-2" bx:preset="gaussian-blur 1 2.2" color-interpolation-filters="sRGB" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2.2 2.2" edgeMode="none"/>
+    </filter>
+    <filter id="inner-shadow-filter-4" bx:preset="inner-shadow 1 0 0 9 0 #a16f55" color-interpolation-filters="sRGB" x="-50%" y="-50%" width="200%" height="200%">
+      <feOffset dx="0" dy="0"/>
+      <feGaussianBlur stdDeviation="9"/>
+      <feComposite operator="out" in="SourceGraphic"/>
+      <feComponentTransfer result="choke">
+        <feFuncA type="linear" slope="0"/>
+      </feComponentTransfer>
+      <feFlood flood-color="#a16f55" result="color"/>
+      <feComposite operator="in" in="color" in2="choke" result="shadow"/>
+      <feComposite operator="over" in="shadow" in2="SourceGraphic"/>
+    </filter>
+    <filter id="gaussian-blur-filter-3" bx:preset="gaussian-blur 1 3.3" color-interpolation-filters="sRGB" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3.3 3.3" edgeMode="none"/>
+    </filter>
+    <filter id="gaussian-blur-filter-4" bx:preset="gaussian-blur 1 2.6" color-interpolation-filters="sRGB" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2.6 2.6" edgeMode="none"/>
+    </filter>
+    <filter id="drop-shadow-filter-0" bx:preset="drop-shadow 1 0 6 2 0.5 rgba(0,0,0,0.3)" color-interpolation-filters="sRGB" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="2"/>
+      <feOffset dx="0" dy="6"/>
+      <feComponentTransfer result="offsetblur">
+        <feFuncA id="spread-ctrl" type="linear" slope="1"/>
+      </feComponentTransfer>
+      <feFlood flood-color="rgba(0,0,0,0.3)"/>
+      <feComposite in2="offsetblur" operator="in"/>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="gaussian-blur-filter-5" bx:preset="gaussian-blur 1 1.5" color-interpolation-filters="sRGB" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="1.5 1.5" edgeMode="none"/>
+    </filter>
+    <filter id="gaussian-blur-filter-6" bx:preset="gaussian-blur 1 3.4" color-interpolation-filters="sRGB" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3.4 3.4" edgeMode="none"/>
+    </filter>
+    <filter id="inner-shadow-filter-5" bx:preset="inner-shadow 1 0 0 10 0.5 rgba(0,0,0,0.7)" color-interpolation-filters="sRGB" x="-50%" y="-50%" width="200%" height="200%">
+      <feOffset dx="0" dy="0"/>
+      <feGaussianBlur stdDeviation="10"/>
+      <feComposite operator="out" in="SourceGraphic"/>
+      <feComponentTransfer result="choke">
+        <feFuncA type="linear" slope="1"/>
+      </feComponentTransfer>
+      <feFlood flood-color="rgba(0,0,0,0.7)" result="color"/>
+      <feComposite operator="in" in="color" in2="choke" result="shadow"/>
+      <feComposite operator="over" in="shadow" in2="SourceGraphic"/>
+    </filter>
+    <filter id="inner-shadow-filter-6" bx:preset="inner-shadow 1 -7 0 10 0.5 #264c1c" color-interpolation-filters="sRGB" x="-50%" y="-50%" width="200%" height="200%">
+      <feOffset dx="-7" dy="0"/>
+      <feGaussianBlur stdDeviation="10"/>
+      <feComposite operator="out" in="SourceGraphic"/>
+      <feComponentTransfer result="choke">
+        <feFuncA type="linear" slope="1"/>
+      </feComponentTransfer>
+      <feFlood flood-color="#264c1c" result="color"/>
+      <feComposite operator="in" in="color" in2="choke" result="shadow"/>
+      <feComposite operator="over" in="shadow" in2="SourceGraphic"/>
+    </filter>
+    <filter id="posterize-filter-0" bx:preset="posterize 1 r 20 1" color-interpolation-filters="sRGB" x="-50%" y="-50%" width="200%" height="200%">
+      <feColorMatrix type="saturate" values="1"/>
+      <feComponentTransfer>
+        <feFuncR type="discrete" tableValues="0 0.05 0.1 0.15 0.2 0.25 0.3 0.35 0.4 0.45 0.5 0.55 0.6 0.65 0.7 0.75 0.8 0.85 0.9 0.95 1"/>
+        <feFuncG type="discrete" tableValues=""/>
+        <feFuncB type="discrete" tableValues=""/>
+      </feComponentTransfer>
+    </filter>
+    <filter id="inner-shadow-filter-7" bx:preset="inner-shadow 1 0 0 2 0.5 rgba(0,0,0,0.7)" color-interpolation-filters="sRGB" x="-50%" y="-50%" width="200%" height="200%">
+      <feOffset dx="0" dy="0"/>
+      <feGaussianBlur stdDeviation="2"/>
+      <feComposite operator="out" in="SourceGraphic"/>
+      <feComponentTransfer result="choke">
+        <feFuncA type="linear" slope="1"/>
+      </feComponentTransfer>
+      <feFlood flood-color="rgba(0,0,0,0.7)" result="color"/>
+      <feComposite operator="in" in="color" in2="choke" result="shadow"/>
+      <feComposite operator="over" in="shadow" in2="SourceGraphic"/>
+    </filter>
+    <filter id="drop-shadow-filter-1" bx:preset="drop-shadow 1 1 2 1 0.5 rgba(0,0,0,0.3)" color-interpolation-filters="sRGB" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="1"/>
+      <feOffset dx="1" dy="2"/>
+      <feComponentTransfer result="offsetblur">
+        <feFuncA id="spread-ctrl" type="linear" slope="1"/>
+      </feComponentTransfer>
+      <feFlood flood-color="rgba(0,0,0,0.3)"/>
+      <feComposite in2="offsetblur" operator="in"/>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <path style="fill: rgb(79, 160, 62); stroke: rgb(79, 160, 62); filter: url(&quot;#inner-shadow-filter-5&quot;);" d="M 314.598 198.618 C 319.195 194.568 324.161 193.343 329.497 194.945 C 329.497 194.945 330.409 192.166 332.234 186.608 C 340.283 162.094 337.163 136.481 322.874 109.77 C 312.3 90.004 296.492 74.11 275.449 62.09 C 267.082 57.311 253.537 55.399 234.813 56.355 C 220.664 57.077 205.316 64.34 188.768 78.143 C 167.158 96.168 154.918 121.508 152.047 154.161 C 150.875 167.496 153.396 181.604 159.713 194.543 C 159.713 194.543 162.583 192.858 167.281 194.196 C 170.081 194.993 171.554 196.188 173.504 198.758 C 173.504 198.758 173.343 196.511 172.162 188.274 C 171.039 180.439 174.526 173.333 182.625 166.957 C 194.132 157.898 207.698 152.38 223.322 150.403 C 243.621 147.834 263.959 150.076 284.335 157.128 C 294.796 160.748 304.048 166.826 312.091 175.361 C 317.436 181.033 318.271 188.785 314.598 198.618 Z"/>
+  <path style="stroke: rgb(0, 0, 0); fill: rgb(250, 229, 178);" d="M 222.465 285.905 C 234.208 290.099 249.205 290.014 267.459 285.651"/>
+  <path style="fill: rgb(255, 235, 189); stroke: rgb(203, 192, 148); filter: url(&quot;#inner-shadow-filter-3&quot;);" d="M 180.128 236.083 C 178.464 227.972 176.956 219.833 175.607 211.667 C 174.268 203.564 173.599 199.512 173.599 199.512 C 168.484 193.85 162.387 193.213 155.308 197.6 C 150.126 200.812 148.015 206.532 148.978 214.761 C 150.311 226.152 154.529 236.816 161.633 246.754 C 164.701 251.045 168.604 254.593 173.344 257.397 C 177.071 259.602 180.296 260.419 183.02 259.85 C 183.02 259.85 183.069 258.213 183.168 254.938 C 183.315 250.083 184.115 245.292 185.57 240.566 C 181.942 237.577 180.128 236.083 180.128 236.083 Z"/>
+  <path style="stroke-width: 1; transform-box: fill-box; transform-origin: 50% 50%; fill: rgb(203, 139, 111); filter: url(&quot;#inner-shadow-filter-4&quot;); stroke: rgb(175, 118, 93);" d="M 334.336 218.229 C 332.672 226.34 331.164 234.479 329.815 242.645 C 328.476 250.748 327.807 254.8 327.807 254.8 C 322.692 260.462 316.691 260.941 309.516 256.712 C 305.083 254.099 303.207 247.892 303.186 239.551 C 303.158 228.082 308.737 217.496 315.841 207.558 C 318.909 203.267 322.812 199.719 327.552 196.915 C 331.279 194.71 334.504 193.893 337.228 194.462 C 337.228 194.462 337.277 196.099 337.376 199.374 C 337.523 204.229 338.323 209.02 339.778 213.746 C 336.15 216.735 334.336 218.229 334.336 218.229 Z" transform="matrix(-1, 0, 0, -1, -0.226196, 0.065582)"/>
+  <path style="stroke: rgb(0, 0, 0); fill: rgb(250, 229, 178); filter: url(&quot;#inner-shadow-filter-0&quot;);" d="M 178.125 169.82 C 178.647 184.587 180.534 198.667 183.787 212.059 C 185.87 220.633 186.684 229.689 186.23 239.226 C 185.364 257.428 190.286 274.973 200.998 291.861 C 207.731 302.477 216.336 311.643 226.811 319.356 C 235.709 325.908 248.775 323.419 259.959 319.628 C 272.01 315.543 281.767 302.764 291.002 285.627 C 299.231 270.356 302.925 249.74 302.083 223.777 C 302.023 221.917 304.443 216.125 306.466 205.703 C 308.782 193.773 309.937 184.638 310.001 173.731 C 295.022 147.015 209.546 137.626 178.125 169.82 Z"/>
+  <path style="fill: rgb(250, 229, 178); stroke: rgb(250, 229, 178);" d="M 257.825 320.537 C 255.226 320.911 250.648 323.692 247.847 323.705 C 242.041 323.731 235.105 323.6 231.759 322.212 C 228.126 320.705 227.319 320.121 224.7 317.894 C 220.654 314.454 218.461 312.93 218.461 312.93 C 219.788 317.17 220.135 319.465 219.922 323.705 C 219.922 323.705 222.493 324.255 227.636 325.355 C 227.636 325.355 231.791 325.623 240.1 326.16 C 246.19 326.554 252.293 326.563 258.409 326.189 C 262.425 325.943 265.07 324.901 268.826 323.062 C 268.726 322.409 268.865 313.733 269.681 313.577 C 266.084 316.624 262.541 319.859 257.825 320.537 Z"/>
+  <path style="fill: rgb(110, 33, 17); stroke: rgb(113, 35, 19);" d="M 178.26 170.693 C 171.422 176.783 169.937 186.91 173.806 201.076 C 173.806 201.076 175.065 208.849 177.583 224.395 C 178.196 228.177 178.787 232.075 179.357 236.088 C 179.357 236.088 181.347 237.592 185.328 240.599 C 185.328 240.599 185.778 239.527 186.677 237.382 C 186.677 237.382 186.498 234.753 186.14 229.494 C 185.659 222.424 184.64 215.411 183.085 208.455 C 180.294 195.969 178.685 183.382 178.26 170.693 Z"/>
+  <path style="filter: url(&quot;#gaussian-blur-filter-0&quot;); stroke-width: 0px; stroke: rgba(0, 0, 0, 0); fill: rgb(195, 134, 103);" d="M 173.394 169.514 C 178.205 179.829 188.787 184.26 205.142 182.809 C 217.336 181.726 229.835 180.002 242.637 177.636 C 263.674 173.747 284.339 179.183 304.631 193.94 C 304.631 193.94 301.862 208.493 296.324 237.599 C 296.324 237.599 298.282 235.171 302.197 230.315 C 302.579 229.84 303.855 231.397 306.024 234.984 C 306.024 234.984 305.945 231.704 305.789 225.143 C 305.789 225.143 307.979 212.321 312.361 186.678 C 313.305 181.152 314.117 175.606 314.797 170.041 C 314.797 170.041 307.866 166.152 293.932 158.5 C 258.613 139.104 199.649 145.289 173.394 169.514 Z"/>
+  <path style="stroke: rgb(0, 0, 0); fill: rgb(21, 8, 8);" d="M 231.393 169.764 C 225.511 163.628 217.916 161.763 208.607 164.167 C 202.388 165.773 197.626 170.083 194.321 177.098 C 193.449 178.949 193.293 176.684 193.852 170.302 C 194.21 166.215 195.685 162.388 198.278 158.819 C 202.78 152.623 210.125 149.01 219.871 150.963 C 223.024 151.595 227.025 155.736 229.415 161.706 C 230.444 164.278 231.4 166.824 231.393 169.764 Z"/>
+  <path style="stroke: rgb(0, 0, 0); stroke-width: 1; transform-box: fill-box; transform-origin: 50% 50%; fill: rgb(35, 8, 11);" d="M 294.394 158.358 C 288.512 164.494 280.917 166.359 271.608 163.955 C 265.389 162.349 260.627 158.039 257.322 151.024 C 256.45 149.173 256.294 151.438 256.853 157.82 C 257.211 161.907 258.686 165.734 261.279 169.303 C 265.781 175.499 273.126 179.112 282.872 177.159 C 286.025 176.527 290.026 172.386 292.416 166.416 C 293.445 163.844 294.401 161.298 294.394 158.358 Z" transform="matrix(-1, 0, 0, -1, 0.000029, -0.000017)"/>
+  <path style="fill: rgb(255, 255, 255); stroke: rgb(255, 255, 255);" d="M 253.872 208.01 C 255.119 186.762 256.018 181.127 264.71 175.333 C 268.235 172.983 272.223 173.039 277.159 174.942 C 283.947 177.559 286.868 187.051 284.808 204.938 C 283.757 214.06 280.613 219.481 275.376 221.199 C 270.716 222.728 265.898 222.159 260.522 220.944 C 258.115 220.4 254.342 216.055 253.872 208.01 Z"/>
+  <path style="stroke-width: 1; transform-box: fill-box; transform-origin: 50% 50%; fill: rgb(255, 255, 255); stroke: rgb(255, 255, 255);" d="M 203.299 188.834 C 204.546 210.082 205.445 215.717 214.137 221.511 C 217.662 223.861 221.65 223.805 226.586 221.902 C 233.374 219.285 236.295 209.793 234.235 191.906 C 233.184 182.784 230.04 177.363 224.803 175.645 C 220.143 174.116 215.325 174.685 209.949 175.9 C 207.542 176.444 203.769 180.789 203.299 188.834 Z" transform="matrix(-1, 0, 0, -1, 0.000002, 0.000017)"/>
+  <ellipse style="stroke-width: 1; stroke: rgb(84, 153, 228); filter: url(&quot;#inner-shadow-filter-2&quot;); fill: rgb(95, 197, 255);" cx="266.277" cy="199.196" rx="11.299" ry="18.706"/>
+  <path style="fill: rgb(84, 49, 42); filter: url(&quot;#drop-shadow-filter-0&quot;); stroke: rgb(84, 49, 42);" d="M 297.958 230.732 C 292.313 241.169 273.5 251.944 243.316 250.155 C 222.269 248.908 204.629 245.526 190.298 231.112 C 190.298 231.112 189.599 232.292 188.2 234.653 C 183.518 242.554 181.982 251.669 183.591 262 C 183.823 263.489 185.452 266.582 188.477 271.28 C 190.368 274.216 195.701 277.896 204.478 282.318 C 211.742 285.978 219.876 286.024 228.879 282.458 C 233.867 280.482 238.806 278.387 243.696 276.173 C 243.696 276.173 245.357 276.99 248.68 278.625 C 258.082 283.251 268.397 285.09 279.627 284.143 C 285.701 283.631 291.886 280.024 298.18 273.323 C 302.638 268.577 305.159 262.574 305.745 255.314 C 306.441 246.685 303.846 238.491 297.958 230.732 Z"/>
+  <ellipse style="stroke: rgb(0, 0, 0); stroke-width: 1; fill: rgb(15, 13, 45);" cx="263.9" cy="200.186" rx="7.922" ry="12.492"/>
+  <ellipse style="stroke-width: 1; stroke: rgb(84, 153, 228); fill: rgb(95, 197, 255); filter: url(&quot;#filter-1&quot;);" cx="222.03" cy="199.75" rx="11.299" ry="18.706"/>
+  <ellipse style="stroke: rgb(0, 0, 0); fill: rgb(17, 16, 45);" cx="224.977" cy="200.73" rx="7.922" ry="12.492"/>
+  <ellipse style="fill: rgb(252, 211, 164); filter: url(&quot;#inner-shadow-filter-1&quot;); stroke: rgb(233, 185, 143);" cx="244.021" cy="239.953" rx="36.043" ry="33.253"/>
+  <path style="stroke: rgb(0, 0, 0); fill: rgb(76, 26, 15);" d="M 199.098 287.438 C 197.122 298.37 198.574 304.633 203.454 306.229 C 205.998 307.061 208.64 306.633 211.38 304.944 C 211.38 304.944 207.286 299.109 199.098 287.438 Z"/>
+  <path style="stroke: rgb(0, 0, 0); stroke-width: 1; transform-box: fill-box; transform-origin: 50% 50%; fill: rgb(50, 15, 4);" d="M 278.262 306.92 C 276.286 295.988 277.738 289.725 282.618 288.129 C 285.162 287.297 287.804 287.725 290.544 289.414 C 290.544 289.414 286.45 295.249 278.262 306.92 Z" transform="matrix(-1, 0, 0, -1, -0.000028, 0.000002)"/>
+  <ellipse style="fill: rgb(255, 255, 255); stroke: rgb(255, 255, 255); filter: url(&quot;#inner-shadow-filter-7&quot;) url(&quot;#drop-shadow-filter-1&quot;);" cx="243.997" cy="107.327" rx="30.438" ry="29.565"/>
+  <path style="filter: url(&quot;#posterize-filter-0&quot;); fill: rgb(82, 179, 60); stroke: rgb(69, 178, 60);" d="M 174.079 175.462 C 169.838 171.27 174.587 162.371 188.324 148.765 C 196.536 140.631 211.029 134.985 231.803 131.827 C 249.085 129.2 266.394 131.648 283.729 139.171 C 295.46 144.262 304.948 152.791 312.192 164.757 C 314.421 168.438 315.417 172.786 315.182 177.799 C 315.182 177.799 314.621 175.389 313.498 170.569 C 312.137 164.728 307.185 158.7 298.642 152.484 C 289.485 145.821 275.789 141.703 257.553 140.129 C 236.963 138.352 216.471 141.031 196.076 148.167 C 190.624 150.075 183.187 156.187 173.766 166.504 C 172.818 167.542 172.923 170.528 174.079 175.462 Z"/>
+  <path style="fill: rgb(35, 81, 24); stroke: rgb(35, 81, 24); filter: url(&quot;#inner-shadow-filter-6&quot;);" d="M 315.728 178.278 C 314.407 155.217 289.11 140.26 245.246 139.997 C 227.851 139.893 211.476 142.679 199.413 147.55 C 189.671 151.483 181.354 157.339 174.669 165.754 C 172.711 168.221 172.378 171.385 173.673 175.247 C 173.673 175.247 175.769 173.027 179.961 168.588 C 193.25 154.519 217.535 150.352 252.875 149.591 C 276.467 149.083 297.155 159.4 315.728 178.278 Z"/>
+  <path style="fill: rgb(244, 200, 158); stroke: rgb(244, 200, 158); filter: url(&quot;#gaussian-blur-filter-5&quot;);" d="M 252.612 301.328 C 242.773 301.953 237.365 301.799 236.387 300.865 C 230.334 295.083 228.544 292.868 231.017 294.22 C 241.334 299.862 251.184 299.719 260.568 293.791 C 255.264 298.816 252.612 301.328 252.612 301.328 Z"/>
+  <path style="stroke: rgb(0, 0, 0); fill: rgb(78, 150, 62); stroke-width: 0px;" d="M 221.003 323.751 C 220.675 323.496 220.314 323.208 219.92 322.886 C 219.073 322.194 218.299 322.967 217.597 325.204 C 217.597 325.204 214.657 326.211 208.778 328.224 C 202.019 330.538 194.828 333.15 188.365 336.252 C 167.335 346.346 148.982 364.071 133.308 389.428 C 133.308 389.428 208.201 389.367 357.987 389.244 C 357.987 389.244 351.323 381.163 337.994 365.001 C 323.712 347.684 301.875 334.53 272.482 325.539 C 272.482 325.539 272.287 324.85 271.896 323.472 C 271.721 322.857 271.092 322.746 270.006 323.139 C 270.006 323.139 269.06 323.558 267.168 324.396 C 262.558 326.438 255.081 327.24 244.739 326.802 C 238.799 326.55 232.866 326.158 226.941 325.625 C 224.823 325.435 222.844 324.81 221.003 323.751 Z"/>
+  <path style="fill: rgb(57, 73, 117); stroke: rgb(40, 51, 81);" d="M 289.64 329.963 C 290.374 348.676 296.712 368.637 308.655 389.846 C 308.655 389.846 265.916 389.577 180.438 389.038 C 180.438 389.038 182.475 386.234 186.55 380.627 C 189.903 376.013 193.633 359.475 197.739 331.012 C 197.739 331.012 203.832 328.906 216.017 324.694 C 216.017 324.694 216.503 326.389 217.474 329.78 C 217.923 331.349 218.936 345.766 220.512 373.028 C 220.512 373.028 225.573 373.91 235.696 375.673 C 247.004 377.642 258.424 376.492 269.956 372.223 C 269.956 372.223 270.011 368.757 270.122 361.824 C 270.321 349.388 271.126 336.977 272.538 324.59 C 272.538 324.59 278.239 326.381 289.64 329.963 Z"/>
+  <path style="stroke: rgb(0, 0, 0); fill: rgb(33, 76, 23); filter: url(&quot;#gaussian-blur-filter-6&quot;);" d="M 224.757 326.016 C 229.972 331.353 241.574 334.959 259.56 336.835 C 259.56 336.835 260.119 337.696 261.238 339.417 C 262.787 341.799 265.156 343.36 268.335 344.14 C 287.339 348.804 296.942 364.354 306.42 389.753 C 306.821 390.829 307.832 390.797 309.858 389.533 C 309.858 389.533 308.947 384.479 307.124 374.372 C 307.124 374.372 308.443 379.591 311.08 390.029 C 311.08 390.029 317.013 389.737 328.88 389.154 C 328.88 389.154 328.89 387.73 328.911 384.882 C 328.944 380.384 332.035 376.864 338.182 374.323 C 338.486 374.197 340.083 375.121 342.972 377.095 C 345.218 378.629 347.536 380.051 349.928 381.359 C 349.928 381.359 348.364 379.526 345.237 375.861 C 340.371 370.158 335.307 364.63 330.045 359.278 C 322.231 351.33 313.363 344.578 303.443 339.021 C 293.155 333.258 282.29 328.675 270.848 325.273 C 270.212 325.084 269.958 324.47 270.087 323.433 C 270.087 323.433 268.869 323.836 266.434 324.641 C 261.763 326.185 256.883 326.811 251.795 326.519 C 251.795 326.519 242.782 326.351 224.757 326.016 Z"/>
+  <path style="fill: rgb(57, 75, 121); stroke: rgb(40, 51, 81);" d="M 215.746 324.182 C 220.125 347.983 220.865 369.868 217.964 389.837 C 217.964 389.837 205.543 389.744 180.701 389.559 C 180.701 389.559 182.43 386.732 185.889 381.077 C 191.825 371.373 195.82 354.679 197.874 330.995 C 197.874 330.995 203.831 328.724 215.746 324.182 Z"/>
+  <path style="fill: rgb(251, 255, 104); stroke: rgb(251, 255, 104);" d="M 211.83 385.099 C 215.101 378.191 213.909 373.983 209.718 370.446 C 205.258 366.683 193.737 368.336 191.285 372.754 C 188.62 377.555 186.769 381.585 190.806 389.22 C 190.806 389.22 196.916 389.232 209.137 389.257 C 209.462 389.258 210.36 387.872 211.83 385.099 Z"/>
+  <path style="stroke-width: 1; transform-box: fill-box; transform-origin: 50% 50%; fill: rgb(54, 68, 110); stroke: rgb(40, 51, 81);" d="M 303.662 389.6 C 308.041 365.799 308.781 343.914 305.88 323.945 C 305.88 323.945 293.459 324.038 268.617 324.223 C 268.617 324.223 270.346 327.05 273.805 332.705 C 279.741 342.409 283.736 359.103 285.79 382.787 C 285.79 382.787 291.747 385.058 303.662 389.6 Z" transform="matrix(-1, 0, 0, -1, -0.000028, -0.000023)"/>
+  <path style="fill: rgb(251, 255, 104); stroke: rgb(251, 255, 104);" d="M 297.635 389.041 C 301.337 383.378 301.037 378.043 296.736 373.037 C 294.069 369.933 290.324 368.283 285.5 368.088 C 281.804 367.939 278.596 369.779 275.875 373.609 C 273.838 376.477 273.931 379.993 276.155 384.158 C 277.262 386.231 278.855 387.957 280.936 389.338 C 280.936 389.338 286.502 389.239 297.635 389.041 Z"/>
+  <path style="filter: url(&quot;#gaussian-blur-filter-1&quot;); fill: rgb(240, 164, 126); stroke-opacity: 0; stroke: rgb(162, 111, 85);" d="M 169.359 212.911 C 177.324 219.472 180.229 221.231 178.076 218.186 C 166.667 202.055 159.134 202.126 155.217 218.139 C 160.804 211.49 165.518 209.747 169.359 212.911 Z"/>
+  <path style="fill: rgb(243, 173, 134); stroke: rgb(241, 165, 127); filter: url(&quot;#gaussian-blur-filter-2&quot;);" d="M 170.286 224.61 C 176.292 229.445 179.295 231.862 179.295 231.862 C 178.936 227.605 169.872 215.943 165.968 218.962 C 163.415 220.937 173.24 232.11 170.653 233.612 C 172.846 225.73 167.704 222.532 170.286 224.61 Z"/>
+  <path style="stroke: rgb(0, 0, 0); filter: url(&quot;#gaussian-blur-filter-3&quot;); fill: rgb(174, 112, 85);" d="M 311.295 215.706 C 317.917 205.697 325.413 204.44 333.784 211.935 C 337.284 215.069 336.052 222.397 330.087 233.917 C 327.066 239.755 322.457 244.58 316.264 248.392 C 312.595 250.65 308.37 249.563 303.589 245.129"/>
+  <path style="stroke: rgb(0, 0, 0); filter: url(&quot;#gaussian-blur-filter-4&quot;); fill: rgba(0, 0, 0, 0);" d="M 309.906 225.045 C 313.568 217.644 317.878 218.772 322.837 228.431"/>
+  <path style="stroke-width: 1; transform-box: fill-box; transform-origin: 50% 50%; fill: rgb(61, 14, 11); stroke: rgb(60, 16, 15);" d="M 308.605 238.072 C 301.767 231.982 299.862 224.095 303.731 209.929 C 303.731 209.929 304.99 202.156 307.508 186.61 C 308.121 182.828 308.712 178.93 309.282 174.917 C 309.282 174.917 311.272 173.413 315.253 170.406 C 315.253 170.406 315.703 171.478 316.602 173.623 C 316.602 173.623 316.423 176.252 316.065 181.511 C 315.584 188.581 314.565 195.594 313.01 202.55 C 310.219 215.036 309.03 225.383 308.605 238.072 Z" transform="matrix(-1, 0, 0, -1, -0.119705, 2.239998)"/>
+  <path style="fill: rgb(79, 160, 62); stroke: rgb(79, 160, 62);" d="M 229.29 86.938 L 240.142 85.583 L 239.341 115.175 L 258.94 114.126 L 259.124 126.417 L 229.928 125.124 L 229.29 86.938 Z"/>
+  <ellipse style="stroke: rgb(0, 0, 0); fill: rgb(255, 255, 255);" cx="225.673" cy="193.237" rx="2.749" ry="2.898"/>
+  <ellipse style="stroke: rgb(0, 0, 0); stroke-width: 1; fill: rgb(255, 255, 255);" cx="263.828" cy="193.088" rx="2.749" ry="2.898"/>
+</svg>
